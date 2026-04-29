@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            text-align: center;
+           /* font-weight: bold; */
+           width: 70%;
+        }
+        tr {
+            height: 50px;
+        }
+        tr:nth-child(even), th:nth-child(even) {
+            background-color: #d6EEEE;
+        }
+        /* tr:nth-child(odd) {
+            background-color:blanchedalmond;
+        } */
+        tr, th {
+            /* background-color: aqua; */
+            font-weight: 100;
+        } 
+    </style>
+</head>
+<body>
+    <h1>Student Information</h1>
+    <table border="2" >
+        <tr>
+            <th colspan="4">CSE Student</th>
+        </tr>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Address</th>
+        </tr>
+        <tr>
+            <th>001</th>
+            <th>Nahid</th>
+            <th>nahid@gmail.com</th>
+            <th>Barishal</th>
+        </tr>
+        <tr>
+            <th>002</th>
+            <th>Ratul</th>
+            <th>ratul@gmail.com</th>
+            <th>Chattogram</th>
+        </tr>
+        <tr>
+            <th rowspan="2" colspan="3">IsDB Student</th>
+            <th></th>
+        </tr>
+        <tr>
+            <th></th>
+            
+        </tr>
+
+    </table>
+</body>
+</html>
