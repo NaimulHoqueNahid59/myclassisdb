@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <label for="first">Enter Your 1st Number</label>
+    <br /><br />
+    <input type="text" name="first" id="first" />
+    <br /><br />
+    <label for="second">Enter Your 2nd Number</label>
+    <br /><br />
+    <input type="text" name="second" id="second" />
+    <br /><br />
+    <label for="third">Enter Your 3rd Number</label>
+    <br /><br />
+    <input type="text" name="third" id="third" />
+    <br /><br />
+    
+    <button id="btn">Submit</button>
+    
+    <h4 id="output_id"></h4>
+    <script>
+    
+     document.getElementById("btn").onclick = function () {
+      let a =Number(document.getElementById("first").value)
+     let b =Number(document.getElementById("second").value)
+     let c =Number(document.getElementById("third").value)
+      let output = document.getElementById("output_id");
+
+      
+      if (a > b && a > c) {
+        output.innerText=(`${a}is the biggest number among ${a}, ${b}, ${c}.`);
+      } else if (b > a && b > c) {
+        output.innerText=(`${b} is the biggest number among ${a}, ${b}, ${c}.`);
+      } else {
+        output.innerText=(`${c} is the biggest number among ${a}, ${b}, ${c}.`);
+      }
+    }
+
+
+
+
+ // let a = Number(prompt(`Enter the 1st number`));
+      // let b = Number(prompt(`Enter the 2nd number`));
+      // let c = Number(prompt(`Enter the 3rd number`));
+//netted if 
+      // if(a>b){
+      //   if(a>c){
+      //     console.log("A is the biggest number")
+      //   }else{
+
+      //     console.log("C is the biggest number")
+      //   }
+      // }else if(b>a){
+      //   if(b>c){
+      //     console.log("B is the biggest number")
+
+      //   }else{
+      //     console.log("C is the biggest number")
+      //   }
+      // }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      // document.getElementById("btn").onclick = function () {
+      //   let result = Number(document.getElementById(`result`).value) ;
+      //   let output = document.getElementById(`output_id`);
+
+      //   //   let result = Number(prompt(`Input Your result`)); //80>=A+ 70>=A 60>=A- fail
+      //   if (result >= 80  && result <101) {
+      //     output.style.color=`green`
+      //     output.innerText=`A+`
+      //   } else if (result >= 70) {
+      //        output.style.color=`yellow`
+      //     output.innerText=`A`
+      //   } else if (result >= 60) {
+      //        output.style.color=`blue`
+      //     output.innerText=`A-`
+      //   } else {
+      //        output.style.color=`red`
+      //     output.innerText=`fail`
+      //   }
+      // }
+      //};
+      //      document.getElementById("btn").onclick = function () {
+      //   let result = Number(document.getElementById("result").value);
+      //   let output = document.getElementById("output_id");
+
+      //   if (result > 100 || result < 0) {
+      //     output.style.color = "orange";
+      //     output.innerText = "Not valid";
+      //   }
+      //   else if (result >= 80) {
+      //     output.style.color = "green";
+      //     output.innerText = "A+";
+      //   } else if (result >= 70) {
+      //     output.style.color = "yellow";
+      //     output.innerText = "A";
+      //   } else if (result >= 60) {
+      //     output.style.color = "blue";
+      //     output.innerText = "A-";
+      //   } else {
+      //     output.style.color = "red";
+      //     output.innerText = "Fail";
+      //   }
+      // };
+
+      // let name = `Khalid Hasan`;
+      // let brother = `Masud Hasan`;
+      // if(name == `Khalid Hasan`){
+      //     console.log("Open The Get");
+      // }
+
+      // if(name==`Khalid Hasan`){
+      //     console.log(`Open The Gate For ${name}`);
+      // }else{
+      //     console.log(`Dont open the gate`);
+
+      // }
+
+      // if(name==`Masud Hasan`){
+      //     console.log(`Open the gate for${name}`);
+      // }else if(brother==`Masud Hasan`){
+      //     console.log(`Open the gate for ${brother}`)
+      // }else{
+      //     console.log(`Don't open the gate`);
+
+      // }
+
+      // nagative or positive number
+      //   let result = Number(prompt(`Give me a Number`));
+      //   if (result >= 50) {
+      //     alert(`Pass`);
+      //   } else {
+      //     alert(`Fail`);
+      //   }
+      // let name2 =`hasib`;
+      // let country=prompt(`Enter your Country Name`);
+      // let Age=prompt(`Enter your age Name`);
+      // let age = 21;
+
+      // if(country == `bangladesh` ){
+      //     if(age>=21){
+      //         console.log(`Get THe license`);
+
+      //     }else{
+      //         console.log(`Did not Get the license`);
+
+      //     }
+
+      // }else if(country !=`bangladesh`){
+      //     if(age>=18){
+      //         console.log(`Get the license`);
+      //     }else{
+      //         console.log(`Did not get The license`)
+      //     }
+      // }
+    </script>
+  </body>
+</html>

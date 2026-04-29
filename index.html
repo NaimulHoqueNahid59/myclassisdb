@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript</title>
+  </head>
+  <body>
+    <h1>JavaScript</h1>
+    <label for="name">Name</label><br />
+    <input type="text" name="name" id="name" /><br /><br />
+    <button id="btn">Submit</button>
+    
+
+
+
+
+
+    <p id="myptag"></p>
+    <p id="name"></p>
+    <p id="Myname"></p>
+    <p id="age"></p>
+    <p id="isstudent"></p>
+
+    <script>
+      // professsional way
+      // document.getElementById("myptag").innerText=`Hello Batch 71`;
+      // alert("Hello batch 71 -Form Alert")
+      //debug
+      // console.log("Hello Batch 71");
+
+      // let name=`Hasan`;
+      // console.log(name);
+      // //alert(name);
+      // document.getElementById(`name`).innerText= `My Name is ${name}`;
+      // let age=22;
+      // document.getElementById(`age`).innerText=`I amd ${age} years old`;
+      // let isstudent=true;
+      // document.getElementById(`isstudent`).innerText=`Am I Student:${isstudent}`;
+
+      // console.log(typeof name);
+      // console.log(typeof age);
+      // console.log(typeof isstudent);
+
+
+
+
+
+
+
+      // javaScript can put input 2 way 1. is Using Promt 2. one is using input tag
+
+    //   let nameinput;
+    //   nameinput = prompt(`Input your name`);
+    //   console.log(nameinput);
+
+      document.getElementById(`btn`).onclick = function () {
+        let n = document.getElementById(`name`).value;
+        console.log(n);
+        document.getElementById(`Myname`).innerText = `My name is ${n}`;
+      }
+    </script>
+  </body>
+</html>

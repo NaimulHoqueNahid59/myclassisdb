@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //same arrow function
+
+    //   const abc = function (name) {
+    //     return name;
+    //   };
+
+    //   const fullname = (firstName, lastName) => {
+    //     return `${firstName} ${lastName}`;
+    //   };
+    //   console.log(fullname("Mahid", "Hossain"));
+    //   console.log(abc("Rakib"));
+    //     const fullname = (firstName, lastName) =>`${firstName} ${lastName}`;
+    //   console.log(fullname("Mahid", "Hossain"));
+
+    //     const fullname = firstName =>firstName;
+    //   console.log(fullname("Mahid"));
+        // const fullname = () => "Hello world";
+        // console.log(fullname());
+        
+        
+
+    // call back function
+    //     function hello(name, Callback) {
+    //         return`hello ${name} ${Callback}`
+    //     }
+    //     function goTo() {
+    //         return"Go to Your Room"
+    //     }
+    //     console.log(hello("Nahid", goTo()));
+        
+
+    //     function hello2(name , Callback) {
+    //         return`hello ${name} ${Callback()}`
+    //     }
+    //     let output = hello2("Masud", ()=>{return "Valu hoye Jao"})
+    //     console.log(output);
+        
+    // //iife
+    // (
+    //     function iivfe(){
+    //         alert("IIFE")
+    //     }
+    // )()
+    
+//recarcive function
+
+
+// function start() {
+//     setTimeout(()=> {
+//         let date= new Date();
+//         console.log(date.toLocaleTimeString())
+//         start()
+// },1000)
+// }
+// start()
+// let time=5;
+// function cdf(name) {
+//     document.write(`${name}`);
+//     time--;
+//     if(time == 0){
+//         return
+//     }
+//     cdf("Masud hasan")
+// }
+// cdf("Masud hasan")
+
+
+
+//ternary oparetor
+
+let age = 14;
+let message;
+if(age>=21 ){
+  message= "Get the licnese"
+}else{
+  message="did not get the license "
+}
+
+let message2=age>=21 ? "Get the license ": "Did not get license";
+console.log(message)
+console.log(message2)
+
+let isstudent=true
+let message3= isstudent? "you are a student": "Your are not a student";
+let cost=250;
+let discount = cost >=150 ?10/100:0;
+let total = cost - cost * discount
+console.log(total);
+
+
+
+
+
+
+
+
+
+
+
+
+      
+    </script>
+  </body>
+</html>

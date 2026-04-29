@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a=10;
+        let b=20;
+        let c=30;
+        let d=40;
+
+        //1. Function Declaration
+
+        // function fullName(firstName, lastName){
+        //     document.write(`<h1>Hello ${firstName} ${lastName} ! well come to my page </h1>`)
+        // }
+        // fullName(`rakib`,`ahmed`)
+        // fullName(`rafiul`,`islam`)
+        
+        
+        // function name() {
+        //     let firstName="rahhid";
+        //     let lastName="ahmed";
+        //     console.log(firstName+ " " + lastName)
+        // }
+        // name()
+
+        // function greet(name) {
+        //     return `assalamu alaikum ${name}`
+        // }
+        // alert(greet("Naimul"))
+
+        function cal(a, op ,b){
+        if(op == "+"){
+            return a+b
+        }else if(op=="-"){
+            return a-b
+        }else if(op=="*"){
+            return a*b
+        }else if(op=="/"){
+            return a/b
+        }
+        }
+        console.log(cal(15, "+" , 100))
+        function pen(price,quentity) {
+            return price * quentity;
+        }
+        console.log(`Total Price` +" "+ pen(100 , 500) + `TK`)
+
+
+    </script>
+</body>
+</html>

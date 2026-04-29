@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //   switch (new Date().getDay()) {
+      //     case 1:
+      //       console.log("Today is Monday");
+      //       break;
+      //     case 2:
+      //       console.log("Today is tuesday");
+      //       break;
+      //       case 3:
+      //         console.log("Today is wednesday");
+      //         break;
+      //         case 4:
+      //             console.log("Today is thursday");
+      //             break;
+      //             case 5:
+      //                 console.log("Today is friday");
+      //                 break;
+      //                 case 6:
+      //                     console.log("Today is Saturday");
+      //                     break;
+      //                     default:
+      //                         console.log("Today is Sunday")
+
+      //}
+
+      //   for (let i = 1; i <=5; i++) {
+      //     console.log(`${i} I love Bangladesh`);
+
+      //   }
+
+      //   for (let j = 0; j < array.length; j++) {
+      //     console.log(`${i} I love Bangladesh`);
+
+      //   }
+
+      // while loop
+      // let i=1;
+      // while (i<=10) {
+      //     console.log(i);
+      //     i++;
+
+      // }
+
+      //do while
+      //     let j=1;
+      // do{
+      //     console.log(j);
+      //     j++
+      // }while (j<=100)
+
+      // let password="1234";
+      // let input="";
+      // let times=3
+
+      // while (input !=password) {
+      //     input= prompt(`Enter Your Password. You have ${times} chance`)
+      //     // input= prompt("Incorrect Passwoed")
+      //     times--;
+
+      //     if(times== 0){
+      //         alert("You have entered to many wrong passwod")
+      //         break;
+      //     }
+      // }
+      //array
+
+      // let foods=[];
+      // let input="";
+      // do{
+      //     input = prompt("Enter Your food name")
+      //     foods.push(input)
+      // }while(input != "exit")
+
+      // console.log(foods);
+      let students = ["Hasan", "khalid", "Hasid"];
+      students.forEach((student) => {
+        console.log(student);
+        document.write("<p> Name:" + student + "</p>");
+      });
+      for (let i = 0; i < students.length; i++) {
+        document.write("<p> Name:" + students[i] + "</p>");
+      } 
+      for(stu of students){
+        document.write(`<p> ${stu}</p>`)
+      }
+
+
+
+
+
+
+
+
+    </script>
+  </body>
+</html>
