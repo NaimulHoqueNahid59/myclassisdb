@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript</title>
+  </head>
+  <body>
+    <form id="f" name="f" style="width: 400px; margin: 0 auto">
+      <div>
+        <label for="name">Name</label>
+        <input type="text" name="name" id="my_name" />
+      </div>
+      <br /><br />
+      <div>
+        <label for="address">Address</label>
+        <input type="text" name="address" id="my_address" />
+      </div>
+      <br /><br />
+      <div>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="my_email" />
+      </div>
+      <br /><br />
+      <div>
+        <label for="city">City</label>
+        <select name="city" id="city">
+          <option value="Dhaka">Dhaka</option>
+          <option value="Khulna">Khulna</option>
+          <option value="Rajshahi">Rajshahi</option>
+          <option value="Barishal">Barishal</option>
+        </select>
+      </div>
+      <br /><br />
+      <div class="checkbox">
+        <label for="">Gender</label>
+        <label for="Male"
+          >Male
+          <input type="radio" id="Male" name="gender" value="Male" checked />
+        </label>
+        <label for="Female"
+          >Female
+          <input type="radio" name="gender" id="Female" value="Female" />
+        </label>
+      </div>
+      <div class="checkbox">
+        <label for="CSC"
+          >CSC
+          <input type="checkbox" name="subject" value="CSC" />
+        </label>
+
+        <label for="EEE"
+          >EEE
+          <input type="checkbox" name="subject" value="EEE" />
+        </label>
+
+        <label for="BBA"
+          >BBA
+          <input type="checkbox" name="subject" value="BBA" />
+        </label>
+
+        <label for="CV"
+          >Civil
+          <input type="checkbox" name="subject" value="CV" />
+        </label>
+      </div>
+      <div>
+        <label for="comment">Comment</label>
+        <textarea name="comment" id="comment"></textarea>
+      </div>
+      <div>
+        <input type="submit" />
+      </div>
+    </form>
+    <script>
+      let form = document.getElementById("f");
+
+      form.onsubmit = function (e) {
+    
+        e.preventDefault();
+        let name2 = form.name.value;
+        let email = form.email.value;
+        let city = form.city.value;
+        let genders = form.gender;
+        let selectedGenders = "";
+        let subjects = form.subject;
+        let selectedSubject = "";
+        let comment = form.comment.value;
+
+        for (gender of genders) {
+          if (gender.checked) {
+           selectedGender = gender.value;
+          }
+        }
+        for (subject of subjects) {
+          if (subject.checked) {
+            selectedSubject += subject.value + ",";
+          }
+        }
+
+        //  console.log(selectedSubject);
+
+
+       let w = window.open("", "_blank", "width=200,height=200");
+      w.document.write(`<h4>Name:${name2}</h4>`);
+      w.document.write(`<h4>Email:${email}</h4>`);
+      w.document.write(`<h4>city:${city}</h4>`);
+      w.document.write(`<h4>Gender:${selectedGender}</h4>`);
+      w.document.write(`<h4>Subject:${selectedSubject}</h4>`);
+      w.document.write(`<h4>Comment:${comment}</h4>`);
+      w.document.write(`<button onclick="self.close()">Close</button>`)
+      w.document.write(`<button onclick="print()">Print</button>`)
+
+      };
+      
+    </script>
+  </body>
+</html>

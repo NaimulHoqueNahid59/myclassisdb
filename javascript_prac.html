@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <h1>Times Table</h1>
+    <input type="number" name="Number" id="Number">
+    <br><br>
+    <button id="btn">Subimt</button>
+    <div id="output"></div> -->
+<script>
+      // answer to qus no 1
+      //     for (let i = 1; i <=50; i++) {
+      //       console.log(i);
+      //    }
+      //    answerto qus no 2
+      // for (let i = 1; i <=100; i++) {
+      //     if (i%2==0) {
+      //          console.log(i);
+      //     }
+
+      //     ;
+
+      // }
+
+      // ans to qus no 3
+
+      // for (let i = 1; i <99; i++) {
+      //     if (i%2 !==0) {
+      //         console.log(i);
+
+      //     }
+
+      // }
+
+      // ans to qus no 4
+
+      // for(let i = 100; i >= 1; i--) {
+      //    console.log(i);
+
+      // }
+      // ans to qus no 5
+
+//         document.getElementById("btn").onclick= () =>{
+//             let num = document.getElementById("Number").value;
+
+//         let abc=""
+//         for (let i = 1; i <=10; i++){
+//             abc += `<div>${num} X ${i} = ${num* i } </div>`
+// 1           
+//         }
+
+//         document.getElementById("output").innerHTML= abc
+    //}
+        // let num = parseInt(prompt("Enter a number:"));
+
+        // for (let i = 1; i <= 10; i++) {
+        //   console.log(`${num} X ${i} = ${num * i}`);
+        // }
+      // ans to the qus no 6
+    //   let sum = 0;
+
+    //   for (let i = 1; i <= 100; i++) {
+    //     sum += i;
+    //   }
+
+    //   console.log("Sum of 1 to 100 is: " + sum);
+
+    // ans to qus no 8
+    // function isprime(number){
+    //     if (number<2) {return false}
+    //         for (let i = 2; i <number; i++){
+    //             if (number % i ==0 ) {
+    //                 return false
+    //             }
+    //         }
+    //         return true
+    // }
+    // if (isprime(7)) {
+    //     console.log("This is prime Number");
+        
+    // } else {
+    //     console.log("This is Not a Prime Number");
+        
+    // }
+    // prime Number
+        function isprime(Number) {
+            if (Number<2) {return false}
+            for (let i = 2; i <Number; i++) {
+                if (Number % i ==0) {
+                    return false;
+                }
+                return true;
+            }
+        }
+        let num= Number(prompt(`Input Your Prime Number:`))
+        if (isprime(num)) {
+            console.log("This is a prime Number")
+        }else{
+            console.log("THis is Not a prime Number");
+            }
+
+    // factorial 
+
+    // let NUM=3
+    // let result=1
+
+    // for (let i = 1; i <=NUM; i++) {
+    //     // result*=i     
+    //     result= result * i
+    // }
+    // console.log(result);
+    
+    </script>
+  </body>
+</html>

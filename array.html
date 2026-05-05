@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1">
+        <thead>
+            <tr>
+                <td>NO</td>
+                <td>Name</td>
+            </tr>
+        </thead>
+        <tbody id="body">
+
+        </tbody>
+    </table>
+    <script>
+        fruits=["Apple", "Banana", "Charry", "Date"]
+        let html =``;
+        fruits.forEach((f_name,i)=>{
+        i++
+        html+=`
+            <tr>
+                <td>${i}</td>
+                <td>${f_name}</td>
+            </tr>
+        `;
+        })
+        document.getElementById("body").innerHTML=html;
+    </script>
+</body>
+</html>
